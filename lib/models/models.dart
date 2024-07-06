@@ -1,5 +1,6 @@
-enum LanguesEnum { en, ca, fr, ge, po, it, ch, es }
-
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:mate_test/enums/enums.dart';
+import 'package:mate_test/utils/utils.dart';
 
 class UserModel {
   late String name;
@@ -112,10 +113,6 @@ class UserDataModel {
   }
 }
 
-
-import 'package:mate/enums/enums.dart';
-import 'package:mate/utils/utils.dart';
-
 class CitieModel {
   final String name;
   final CityAbbreviation abrv;
@@ -177,9 +174,6 @@ class SelectCitieModel extends CitieModel {
   }
 }
 
-
-import 'package:cloud_firestore/cloud_firestore.dart';
-
 class PlanModel {
   late String citieName;
   late Timestamp startDate;
@@ -214,7 +208,6 @@ class PlanModel {
     );
   }
 }
-
 
 class ImageModel {
   final String url;
